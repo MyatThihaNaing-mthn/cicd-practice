@@ -20,11 +20,11 @@ jobs:
       - job-1
       - job-2
     steps:
-      - run: echo "They can also depend on one another..."
+      - run: echo "Running job-3 now that job-1 and job-2 are completed"
   job-4:
     runs-on: ubuntu-24.04
     needs:
       - job-2
       - job-3
     steps:
-      - run: echo "...to form a directed acyclic graph (DAG)"
+      - run: echo "Running job-4 now that job-2 and job-3 are completed"
