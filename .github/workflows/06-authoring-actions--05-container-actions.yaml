@@ -52,7 +52,7 @@ jobs:
     name: Node.js Container Action (dynamic Dockerfile build)
     steps:
       - name: Checkout
-        uses: actions/checkout@699385131e745416a3051a462b63db519ed7e6ac
+        uses: actions/checkout@ff7abcd0c3c05ccf6adc123a8cd1fd4fb30fb493 # v5.0.0
       - name: Run container action
         uses: ./06-authoring-actions/container-actions/node-container-action
         id: Myat
